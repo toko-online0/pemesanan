@@ -905,7 +905,7 @@
                 <div class="guide-step">
                     <i class="fas fa-mouse-pointer"></i>
                     <h3>Pilih Layanan</h3>
-                    <p>Klik tombol "Pilih Layanan" pada layanan yang Anda inginkan</p>
+                    <p>Klik tombol "Pilih Layanan" pada layanan yang Anda inginkan, jika ingin memilih lebih dari 1, setelah memilih 1 layanan pertama klik batal kemudian pilih layanan lainnya, pesanan sebelum nya otomatis masih tersimpan, begitu seterus nya, setelah selesai baru konfirmasi</p>
                 </div>
                 
                 <div class="guide-step">
@@ -917,7 +917,7 @@
                 <div class="guide-step">
                     <i class="fas fa-paper-plane"></i>
                     <h3>Konfirmasi</h3>
-                    <p>Tekan tombol Kirim pesanan dan kami akan segera menghubungi Anda</p>
+                    <p>Klik Konfirmasi Pesanan dan Kirim pesanan WhatsApp dan kami akan segera menghubungi Anda</p>
                 </div>
             </div>
         </div>
@@ -1442,9 +1442,9 @@
             }
             
             let message = `*📋 PESANAN BARU - TOKO SHAFAQO*%0A%0A`;
-            message += `*===============================*%0A`;
+            message += `*=========================*%0A`;
             message += `*👤 DATA PELANGGAN*%0A`;
-            message += `*===============================*%0A`;
+            message += `*=========================*%0A`;
             message += `▪️ *Nama Pemesan*: ${customerName}%0A`;
             message += `▪️ *Alamat*: ${customerAddress}%0A`;
             message += `▪️ *Nomor HP*: ${customerPhone}%0A`;
@@ -1454,9 +1454,9 @@
                 message += `▪️ *Catatan Tambahan*: ${customerNotes}%0A`;
             }
             
-            message += `%0A*============================*%0A`;
+            message += `%0A*=========================*%0A`;
             message += `*🛒 DETAIL LAYANAN DIPESAN*%0A`;
-            message += `*============================*%0A`;
+            message += `*=========================*%0A`;
             
             selectedServices.forEach((service, index) => {
                 message += `%0A*${index + 1}. ${service.name}*%0A`;
@@ -1464,9 +1464,9 @@
                 message += `   📝 *Deskripsi*: ${service.description}%0A`;
             });
             
-            message += `%0A*============================*%0A`;
+            message += `%0A*=========================*%0A`;
             message += `*💰 TOTAL LAYANAN*: ${selectedServices.length}%0A`;
-            message += `*============================*%0A%0A`;
+            message += `*=========================*%0A%0A`;
             message += `_Terima kasih atas pesanan Anda. Kami akan segera menghubungi Anda untuk konfirmasi lebih lanjut._%0A%0A`;
             message += `*📱 Toko Shafaqo*%0A`;
             message += `📍 Jl. Sutan Soripada Mulia GG Serasi 10 Ujung, Padangsidimpuan%0A`;
