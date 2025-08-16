@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toko Shafaqo - Solusi Profesional Teknologi & Desain</title>
-    <link href="css2.css" rel="stylesheet">
-    <link rel="stylesheet" href="all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
             --primary: #6C63FF;
@@ -917,7 +917,7 @@
                 <div class="guide-step">
                     <i class="fas fa-paper-plane"></i>
                     <h3>Konfirmasi</h3>
-                    <p>Kirim pesanan dan kami akan segera menghubungi Anda</p>
+                    <p>Tekan tombol Kirim pesanan dan kami akan segera menghubungi Anda</p>
                 </div>
             </div>
         </div>
@@ -1442,9 +1442,9 @@
             }
             
             let message = `*📋 PESANAN BARU - TOKO SHAFAQO*%0A%0A`;
-            message += `*================================*%0A`;
+            message += `*===============================*%0A`;
             message += `*👤 DATA PELANGGAN*%0A`;
-            message += `*================================*%0A`;
+            message += `*===============================*%0A`;
             message += `▪️ *Nama Pemesan*: ${customerName}%0A`;
             message += `▪️ *Alamat*: ${customerAddress}%0A`;
             message += `▪️ *Nomor HP*: ${customerPhone}%0A`;
@@ -1454,9 +1454,9 @@
                 message += `▪️ *Catatan Tambahan*: ${customerNotes}%0A`;
             }
             
-            message += `%0A*================================*%0A`;
+            message += `%0A*============================*%0A`;
             message += `*🛒 DETAIL LAYANAN DIPESAN*%0A`;
-            message += `*================================*%0A`;
+            message += `*============================*%0A`;
             
             selectedServices.forEach((service, index) => {
                 message += `%0A*${index + 1}. ${service.name}*%0A`;
@@ -1464,12 +1464,14 @@
                 message += `   📝 *Deskripsi*: ${service.description}%0A`;
             });
             
-            message += `%0A*================================*%0A`;
+            message += `%0A*============================*%0A`;
             message += `*💰 TOTAL LAYANAN*: ${selectedServices.length}%0A`;
-            message += `*================================*%0A%0A`;
+            message += `*============================*%0A%0A`;
             message += `_Terima kasih atas pesanan Anda. Kami akan segera menghubungi Anda untuk konfirmasi lebih lanjut._%0A%0A`;
             message += `*📱 Toko Shafaqo*%0A`;
             message += `📍 Jl. Sutan Soripada Mulia GG Serasi 10 Ujung, Padangsidimpuan%0A`;
+            message += `link google maps :`;
+            message += `https://www.google.com/maps/@1.394838,99.2648328,16z?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D`;
             message += `☎️ 0822-7390-2728%0A`;
             
             // Open WhatsApp with the message
